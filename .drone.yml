@@ -38,7 +38,7 @@ steps:
     insecure: true
     debug: true
     build_args:
-      - GIT_COMMIT=/${DRONE_COMMIT}
+      - GIT_COMMIT=${DRONE_COMMIT}
       - GIT_TAG=${DRONE_TAG}
   when:
     event:
